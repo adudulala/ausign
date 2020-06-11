@@ -16,10 +16,10 @@ Db::setConfig([
             // 主机地址
             'hostname' => '127.0.0.1',
             // 用户名
-            'username' => 'k4h_cc',
-            'password' => 'erA5w72N8jdsKbxJ',
+            'username' => '123456',
+            'password' => '123456',
             // 数据库名
-            'database' => 'k4h_cc',
+            'database' => '123456',
             // 数据库编码默认采用utf8
             'charset'  => 'utf8',
             // 数据库表前缀
@@ -203,9 +203,9 @@ function app_signer(){
 				Db::name('spDeviceAcc')->where('udid',$item['udid'])->update(['device_mobileprovision'=>$profile]);
 
 				// 签名生成安装包
-				exec($ausign_path.'ausign --email 739218667@qq.com -p b123456', $output, $result1);
+				exec($ausign_path.'ausign --email 739218667@qq.com -p 123456', $output, $result1);
 				
-				apple_log($ausign_path.'ausign --email 739218667@qq.com -p b123456');
+				apple_log($ausign_path.'ausign --email 739218667@qq.com -p 123456');
 				apple_log(json_encode($output));
 				
 
